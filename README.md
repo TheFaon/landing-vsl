@@ -7,7 +7,7 @@ Single-file landing page for prospects who have just booked a sales call. The pa
 Replace these placeholders before going live:
 
 - The Loom MP4 URL in the video player and fallback link, plus `images/loom-preview.jpg` for the video preview image.
-- `PLACEHOLDER_PHONE` in the SMS cancellation link. Keep the `+33` country prefix if the target number is French.
+- The SMS cancellation link currently points to `+33781574955`.
 - Pass `bookingUid=BOOKING_UID` in the landing page URL to generate the Cal.com rescheduling URL: `https://cal.com/adwaves/15min?rescheduleUid=BOOKING_UID`.
 
 The Open Graph and Twitter preview image is `images/site-preview-hero.png`, generated from a 1200x630 screenshot of the hero section.
