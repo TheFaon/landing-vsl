@@ -12,6 +12,8 @@ Replace these placeholders before going live:
 
 The Open Graph and Twitter preview image is `images/site-preview-hero.png`.
 
+The public GitHub Pages URL is `https://thefaon.github.io/landing-vsl/`.
+
 ## Case study images
 
 The page uses these optimized files:
