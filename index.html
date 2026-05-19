@@ -1,0 +1,1590 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avant qu'on se parle - Adwaves</title>
+    <meta name="description" content="90 secondes pour rendre notre échange plus utile.">
+
+    <meta property="og:title" content="Votre rendez-vous Adwaves est confirmé">
+    <meta property="og:description" content="90 secondes pour rendre notre échange plus utile.">
+    <meta property="og:image" content="https://adwaves.fr/og-adwaves-rdv-placeholder-1200x630.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Votre rendez-vous Adwaves est confirmé">
+    <meta name="twitter:description" content="90 secondes pour rendre notre échange plus utile.">
+    <meta name="twitter:image" content="https://adwaves.fr/og-adwaves-rdv-placeholder-1200x630.jpg">
+    <link rel="icon" href="https://adwaves.fr/favicon.ico" sizes="32x32">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.loom.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet">
+
+    <style>
+      :root {
+        --cream: #fffaf5;
+        --card: #ffffff;
+        --soft-gray: #f5f7f9;
+        --ink: #101010;
+        --muted: #5c5c5c;
+        --orange: #ff4f01;
+        --orange-tint: #ffe9d9;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        box-shadow: none !important;
+      }
+
+      html {
+        background: var(--cream);
+      }
+
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: "Bricolage Grotesque", -apple-system, system-ui, sans-serif;
+        text-rendering: geometricPrecision;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img,
+      svg {
+        display: block;
+      }
+
+      button,
+      input,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      button {
+        border: 0;
+        color: inherit;
+      }
+
+      .hero-actions {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 28px;
+      }
+
+      .adwaves-action-btn {
+        align-items: center;
+        border-radius: 50px;
+        display: inline-flex;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        letter-spacing: 0;
+        line-height: 1;
+        min-height: 52px;
+        padding: 0 28px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 200ms ease-out, border-color 200ms ease-out, color 200ms ease-out, transform 200ms ease-out;
+        width: min(100%, 320px);
+      }
+
+      .adwaves-action-btn:hover {
+        text-decoration: none;
+        transform: translateY(-1px);
+      }
+
+      .adwaves-action-btn:focus-visible {
+        outline: 2px solid var(--orange);
+        outline-offset: 4px;
+      }
+
+      .adwaves-action-btn--primary {
+        background: var(--orange);
+        color: #ffffff;
+      }
+
+      .adwaves-action-btn--primary:hover {
+        background: #e94700;
+        color: #ffffff;
+      }
+
+      .adwaves-action-btn--secondary {
+        background: transparent;
+        border: 1px solid rgba(16, 16, 16, 0.26);
+        color: var(--ink);
+      }
+
+      .adwaves-action-btn--secondary:hover {
+        background: #ffffff;
+        border-color: var(--ink);
+        color: var(--ink);
+      }
+
+      .absolute {
+        position: absolute;
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      .inset-0 {
+        inset: 0;
+      }
+
+      .z-\[1\] {
+        z-index: 1;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .inline-flex {
+        display: inline-flex;
+      }
+
+      .grid {
+        display: grid;
+      }
+
+      .items-center {
+        align-items: center;
+      }
+
+      .justify-between {
+        justify-content: space-between;
+      }
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .gap-2 {
+        gap: 8px;
+      }
+
+      .gap-4 {
+        gap: 16px;
+      }
+
+      .gap-6 {
+        gap: 24px;
+      }
+
+      .m-0 {
+        margin: 0;
+      }
+
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .mx-2 {
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+
+      .mt-2 {
+        margin-top: 8px;
+      }
+
+      .mt-3 {
+        margin-top: 12px;
+      }
+
+      .mt-4 {
+        margin-top: 16px;
+      }
+
+      .mt-5 {
+        margin-top: 20px;
+      }
+
+      .mt-6 {
+        margin-top: 24px;
+      }
+
+      .mt-7 {
+        margin-top: 28px;
+      }
+
+      .mt-8 {
+        margin-top: 32px;
+      }
+
+      .mt-12 {
+        margin-top: 48px;
+      }
+
+      .mt-14 {
+        margin-top: 56px;
+      }
+
+      .p-0 {
+        padding: 0;
+      }
+
+      .p-8 {
+        padding: 32px;
+      }
+
+      .px-5 {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .px-6 {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .px-7 {
+        padding-left: 28px;
+        padding-right: 28px;
+      }
+
+      .py-3 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      .py-4 {
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+
+      .py-6 {
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+
+      .py-14 {
+        padding-top: 56px;
+        padding-bottom: 56px;
+      }
+
+      .py-16 {
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+
+      .py-20 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      .py-24 {
+        padding-top: 96px;
+        padding-bottom: 96px;
+      }
+
+      .py-\[72px\] {
+        padding-top: 72px;
+        padding-bottom: 72px;
+      }
+
+      .pb-8 {
+        padding-bottom: 32px;
+      }
+
+      .pb-12 {
+        padding-bottom: 48px;
+      }
+
+      .pb-16 {
+        padding-bottom: 64px;
+      }
+
+      .pt-8 {
+        padding-top: 32px;
+      }
+
+      .pt-12 {
+        padding-top: 48px;
+      }
+
+      .pt-14 {
+        padding-top: 56px;
+      }
+
+      .pt-20 {
+        padding-top: 80px;
+      }
+
+      .h-4 {
+        height: 16px;
+      }
+
+      .w-4 {
+        width: 16px;
+      }
+
+      .h-20 {
+        height: 80px;
+      }
+
+      .w-20 {
+        width: 80px;
+      }
+
+      .h-full {
+        height: 100%;
+      }
+
+      .w-full {
+        width: 100%;
+      }
+
+      .min-h-11 {
+        min-height: 44px;
+      }
+
+      .max-w-full {
+        max-width: 100%;
+      }
+
+      .max-w-\[600px\] {
+        max-width: 600px;
+      }
+
+      .max-w-\[620px\] {
+        max-width: 620px;
+      }
+
+      .max-w-\[720px\] {
+        max-width: 720px;
+      }
+
+      .max-w-\[760px\] {
+        max-width: 760px;
+      }
+
+      .max-w-\[1080px\] {
+        max-width: 1080px;
+      }
+
+      .aspect-video {
+        aspect-ratio: 16 / 9;
+      }
+
+      .overflow-hidden {
+        overflow: hidden;
+      }
+
+      .object-cover {
+        object-fit: cover;
+      }
+
+      .shrink-0 {
+        flex-shrink: 0;
+      }
+
+      .rounded-brand {
+        border-radius: 30px;
+      }
+
+      .rounded-pill {
+        border-radius: 50px;
+      }
+
+      .rounded-full {
+        border-radius: 9999px;
+      }
+
+      .bg-cream {
+        background: var(--cream);
+      }
+
+      .bg-white {
+        background: #ffffff;
+      }
+
+      .bg-softGray {
+        background: var(--soft-gray);
+      }
+
+      .bg-ink {
+        background: var(--ink);
+      }
+
+      .bg-orange {
+        background: var(--orange);
+      }
+
+      .bg-orangeTint {
+        background: var(--orange-tint);
+      }
+
+      .text-ink {
+        color: var(--ink);
+      }
+
+      .text-muted {
+        color: var(--muted);
+      }
+
+      .text-orange {
+        color: var(--orange);
+      }
+
+      .text-cream {
+        color: var(--cream);
+      }
+
+      .text-\[\#A0A0A0\] {
+        color: #a0a0a0;
+      }
+
+      .text-\[\#B0B0B0\] {
+        color: #b0b0b0;
+      }
+
+      .text-left {
+        text-align: left;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .font-bricolage {
+        font-family: "Bricolage Grotesque", -apple-system, system-ui, sans-serif;
+      }
+
+      .antialiased {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .font-normal {
+        font-weight: 400;
+      }
+
+      .font-medium {
+        font-weight: 500;
+      }
+
+      .font-semibold {
+        font-weight: 600;
+      }
+
+      .font-bold {
+        font-weight: 700;
+      }
+
+      .text-\[12px\] {
+        font-size: 12px;
+      }
+
+      .text-\[13px\] {
+        font-size: 13px;
+      }
+
+      .text-\[14px\] {
+        font-size: 14px;
+      }
+
+      .text-\[15px\] {
+        font-size: 15px;
+      }
+
+      .text-\[17px\] {
+        font-size: 17px;
+      }
+
+      .text-\[18px\] {
+        font-size: 18px;
+      }
+
+      .text-\[20px\] {
+        font-size: 20px;
+      }
+
+      .text-\[28px\] {
+        font-size: 28px;
+      }
+
+      .text-\[36px\] {
+        font-size: 36px;
+      }
+
+      .leading-none {
+        line-height: 1;
+      }
+
+      .leading-snug {
+        line-height: 1.375;
+      }
+
+      .leading-relaxed {
+        line-height: 1.625;
+      }
+
+      .leading-\[1\.1\] {
+        line-height: 1.1;
+      }
+
+      .leading-\[1\.15\] {
+        line-height: 1.15;
+      }
+
+      .leading-\[1\.2\] {
+        line-height: 1.2;
+      }
+
+      .leading-\[1\.25\] {
+        line-height: 1.25;
+      }
+
+      .leading-\[1\.45\] {
+        line-height: 1.45;
+      }
+
+      .leading-\[1\.5\] {
+        line-height: 1.5;
+      }
+
+      .leading-\[1\.6\] {
+        line-height: 1.6;
+      }
+
+      .tracking-\[-0\.01em\] {
+        letter-spacing: -0.01em;
+      }
+
+      .tracking-\[0\] {
+        letter-spacing: 0;
+      }
+
+      .tracking-\[0\.08em\] {
+        letter-spacing: 0.08em;
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .no-underline {
+        text-decoration-line: none;
+      }
+
+      .underline-offset-2 {
+        text-underline-offset: 2px;
+      }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
+
+      .transition-colors {
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+      }
+
+      .transition-transform {
+        transition-property: transform;
+      }
+
+      .duration-200 {
+        transition-duration: 200ms;
+      }
+
+      .ease-out {
+        transition-timing-function: ease-out;
+      }
+
+      .hover\:text-orange:hover {
+        color: var(--orange);
+      }
+
+      .hover\:underline:hover {
+        text-decoration-line: underline;
+      }
+
+      .group:hover .group-hover\:scale-\[1\.05\],
+      .group:focus-visible .group-focus-visible\:scale-\[1\.05\] {
+        transform: scale(1.05);
+      }
+
+      .focus-visible\:outline:focus-visible {
+        outline-style: solid;
+      }
+
+      .focus-visible\:outline-2:focus-visible {
+        outline-width: 2px;
+      }
+
+      .focus-visible\:outline-offset-4:focus-visible {
+        outline-offset: 4px;
+      }
+
+      .focus-visible\:outline-orange:focus-visible {
+        outline-color: var(--orange);
+      }
+
+      .topbar-tagline {
+        display: block;
+      }
+
+      [data-animate] {
+        opacity: 0;
+        transition-property: opacity, transform;
+        transition-timing-function: ease-out;
+        will-change: opacity, transform;
+      }
+
+      [data-animate="fade-in"] {
+        transform: none;
+      }
+
+      [data-animate="fade-up"] {
+        transform: translateY(8px);
+      }
+
+      [data-animate="scale-in"] {
+        transform: scale(0.97);
+      }
+
+      [data-animate].is-visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      .play-icon {
+        height: 28px;
+        width: 28px;
+        margin-left: 4px;
+        color: #ffffff;
+      }
+
+      .wave-divider {
+        opacity: 0;
+        transform: translateY(6px);
+        transition: opacity 600ms ease-out, transform 600ms ease-out;
+      }
+
+      .wave-divider path {
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        transition: stroke-dashoffset 900ms ease-out;
+      }
+
+      .wave-divider.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .wave-divider.is-visible path {
+        stroke-dashoffset: 0;
+      }
+
+      .proof-image {
+        border-radius: 16px;
+        display: block;
+        height: auto;
+        margin-inline: auto;
+        max-height: 400px;
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      .proof-image-frame {
+        border-radius: 18px;
+        display: block;
+        line-height: 0;
+        margin-inline: auto;
+        max-width: 100%;
+        overflow: hidden;
+        transform: translateZ(0);
+        width: fit-content;
+      }
+
+      .proof-image-frame .proof-image {
+        border-radius: 18px;
+        clip-path: inset(0 round 18px);
+        margin-inline: 0;
+      }
+
+      .case-label {
+        line-height: 1.35;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+
+      .call-icon {
+        align-items: center;
+        background: var(--orange-tint);
+        border-radius: 16px;
+        color: var(--orange);
+        display: flex;
+        height: 48px;
+        justify-content: center;
+        width: 48px;
+      }
+
+      .call-icon svg {
+        height: 25px;
+        width: 25px;
+      }
+
+      .acdj-slider {
+        aspect-ratio: 16 / 10;
+        background: var(--soft-gray);
+        border-radius: 16px;
+        cursor: ew-resize;
+        overflow: hidden;
+        position: relative;
+        touch-action: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+        width: 100%;
+      }
+
+      .acdj-slider * {
+        -webkit-user-select: none;
+        user-select: none;
+      }
+
+      .acdj-img {
+        display: block;
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        -webkit-user-drag: none;
+        width: 100%;
+      }
+
+      .acdj-after {
+        z-index: 1;
+      }
+
+      .acdj-before-wrap {
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 0;
+        z-index: 2;
+      }
+
+      .acdj-before-wrap .acdj-img {
+        max-width: none;
+      }
+
+      .acdj-before-wrap.is-animating,
+      .acdj-handle.is-animating {
+        transition: width 400ms ease-out, left 400ms ease-out;
+      }
+
+      .acdj-handle {
+        height: 100%;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        width: 4px;
+        z-index: 4;
+      }
+
+      .acdj-handle-line {
+        background: #ffffff;
+        height: 100%;
+        margin: 0 auto;
+        width: 2px;
+      }
+
+      .acdj-handle-button {
+        align-items: center;
+        background: #ffffff;
+        border-radius: 50%;
+        cursor: ew-resize;
+        display: flex;
+        height: 44px;
+        justify-content: center;
+        left: 50%;
+        pointer-events: auto;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 44px;
+      }
+
+      .acdj-label {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 50px;
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        line-height: 1;
+        padding: 6px 12px;
+        pointer-events: none;
+        position: absolute;
+        top: 16px;
+        z-index: 5;
+      }
+
+      .acdj-label-left {
+        left: 16px;
+      }
+
+      .acdj-label-right {
+        right: 16px;
+      }
+
+      .dark-section-waves {
+        height: 100%;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      #hero-title,
+      #final-title,
+      #appointment-text {
+        overflow-wrap: anywhere;
+      }
+
+      @media (max-width: 640px) {
+        .proof-image {
+          max-height: 300px;
+        }
+
+        .acdj-label {
+          top: 12px;
+        }
+
+        .acdj-label-left {
+          left: 12px;
+        }
+
+        .acdj-label-right {
+          right: 12px;
+        }
+      }
+
+      @media (max-width: 479px) {
+        .topbar-tagline {
+          display: none;
+        }
+      }
+
+      @media (min-width: 640px) {
+        .hero-actions {
+          flex-direction: row;
+          gap: 16px;
+          margin-top: 32px;
+        }
+
+        .adwaves-action-btn {
+          font-size: 18px;
+          min-width: 190px;
+          width: auto;
+        }
+
+        .adwaves-action-btn--secondary {
+          min-width: 210px;
+        }
+
+        .sm\:px-6 {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+
+        .sm\:px-7 {
+          padding-left: 28px;
+          padding-right: 28px;
+        }
+
+        .sm\:py-6 {
+          padding-top: 24px;
+          padding-bottom: 24px;
+        }
+
+        .sm\:py-16 {
+          padding-top: 64px;
+          padding-bottom: 64px;
+        }
+
+        .sm\:py-20 {
+          padding-top: 80px;
+          padding-bottom: 80px;
+        }
+
+        .sm\:py-24 {
+          padding-top: 96px;
+          padding-bottom: 96px;
+        }
+
+        .sm\:pb-12 {
+          padding-bottom: 48px;
+        }
+
+        .sm\:pb-16 {
+          padding-bottom: 64px;
+        }
+
+        .sm\:pt-12 {
+          padding-top: 48px;
+        }
+
+        .sm\:pt-20 {
+          padding-top: 80px;
+        }
+
+        .sm\:text-\[20px\] {
+          font-size: 20px;
+        }
+
+        .sm\:text-\[24px\] {
+          font-size: 24px;
+        }
+
+        .sm\:text-\[32px\] {
+          font-size: 32px;
+        }
+
+        .sm\:text-\[36px\] {
+          font-size: 36px;
+        }
+
+        .sm\:text-\[48px\] {
+          font-size: 48px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .lg\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .lg\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+
+        [data-animate] {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="font-bricolage antialiased">
+    <header
+      class="flex items-center justify-between px-5 py-4 sm:px-7 sm:py-6"
+      data-animate="fade-in"
+      data-delay="100"
+      data-duration="200"
+    >
+      <a href="https://adwaves.fr" class="min-h-11 inline-flex items-center text-[20px] font-bold tracking-[-0.01em] text-ink no-underline sm:text-[24px]" aria-label="AdWaves">
+        AdWaves
+      </a>
+      <p class="topbar-tagline m-0 text-[14px] font-normal text-muted">
+        Agence digitale pour artisans
+      </p>
+    </header>
+
+    <main>
+      <section class="bg-cream px-6 pb-8 pt-14 sm:pb-12 sm:pt-20">
+        <div class="mx-auto max-w-[760px] text-center">
+          <h1
+            id="hero-title"
+            class="mx-auto max-w-[600px] text-[36px] font-semibold leading-[1.1] tracking-[0] text-ink sm:text-[48px]"
+            data-animate="fade-up"
+            data-delay="200"
+            data-duration="400"
+          >
+            Avant qu'on se parle...
+          </h1>
+          <p
+            class="mx-auto mt-4 max-w-[600px] text-[17px] font-normal leading-[1.45] text-muted sm:text-[20px]"
+            data-animate="fade-up"
+            data-delay="350"
+            data-duration="400"
+          >
+            90 secondes pour rendre notre échange plus utile.
+          </p>
+          <div
+            class="mt-8 inline-flex max-w-full items-center gap-2 rounded-pill bg-orangeTint px-5 py-3 text-left text-[14px] font-medium leading-snug text-orange"
+            data-animate="fade-up"
+            data-delay="500"
+            data-duration="400"
+          >
+            <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <span id="appointment-text">Rendez-vous confirmé</span>
+          </div>
+          <p
+            class="mx-auto mt-7 max-w-[620px] text-[13px] font-normal leading-relaxed text-muted"
+            data-animate="fade-up"
+            data-delay="650"
+            data-duration="400"
+          >
+            19 sites créés <span class="mx-2 text-orange" aria-hidden="true">·</span> 100% de clients satisfaits <span class="mx-2 text-orange" aria-hidden="true">·</span> Audit offert pendant l'appel
+          </p>
+          <div
+            class="hero-actions"
+            data-animate="fade-up"
+            data-delay="800"
+            data-duration="400"
+            aria-label="Gestion du rendez-vous"
+          >
+            <a
+              id="reschedule-link"
+              href="https://cal.com/adwaves/15min"
+              class="adwaves-action-btn adwaves-action-btn--primary"
+            >Reprogrammer</a>
+            <a
+              id="sms-cancel-link"
+              href="sms:+33PLACEHOLDER_PHONE?body=Bonjour%20Carlos%2C%20je%20dois%20annuler%20notre%20rendez-vous.%20D%C3%A9sol%C3%A9%20pour%20l%27inconv%C3%A9nient."
+              class="adwaves-action-btn adwaves-action-btn--secondary"
+            >Annuler proprement</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-cream px-6 pb-12 pt-8 sm:pb-16 sm:pt-12">
+        <div class="mx-auto max-w-[760px]">
+          <div
+            id="video-shell"
+            class="aspect-video overflow-hidden rounded-brand bg-white"
+            data-animate="scale-in"
+            data-delay="950"
+            data-duration="500"
+          >
+            <video
+              class="h-full w-full rounded-brand bg-ink object-cover"
+              controls
+              poster="images/loom-preview.jpg"
+              preload="metadata"
+              playsinline
+            >
+              <source src="https://cdn.loom.com/sessions/transcoded/dda1c36702d44fffb7b79e0724781782.mp4?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4ubG9vbS5jb20vc2Vzc2lvbnMvdHJhbnNjb2RlZC9kZGExYzM2NzAyZDQ0ZmZmYjdiNzllMDcyNDc4MTc4Mi5tcDQiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3NzkyMDc3Nzh9fX1dfQ__&Key-Pair-Id=KQOSYIR44AIC0&Signature=gKYR8acvDgbi8z18XA6FFb6V3WsUUitSkMpozCmYDYKTywl2sKkWmthVWN%7Etq6UxqZLmK0hwtUFMX88T2mRTjaJ7tYCYHQV-8WTl6G3nAte9Njf5GwUzY5r2BvOOFkXRmvqNQZbGNhsXOn3pYWJXIPJ1kSnmbJUvfLGJ13prtlalBByDd2fSkcAkynEN%7EYOZSR0oa0Ts15hbLE1G5Bh0h7jfocbaytpeQ7Zlb11uMfGp2bwIvZzKgfIAtIy08wmpofziJwCIURZLyjgYX9ja8QkTQ4b0hW-8aRwEKN5Ltq73byszi6XzHNourUQn27k7JtIOvbvqWgZ15MI5PT6R6A__" type="video/mp4">
+            </video>
+          </div>
+          <p class="mt-4 text-center text-[13px] italic leading-relaxed text-muted">
+            Si la vidéo ne se charge pas,
+            <a
+              href="https://cdn.loom.com/sessions/transcoded/dda1c36702d44fffb7b79e0724781782.mp4?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4ubG9vbS5jb20vc2Vzc2lvbnMvdHJhbnNjb2RlZC9kZGExYzM2NzAyZDQ0ZmZmYjdiNzllMDcyNDc4MTc4Mi5tcDQiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3NzkyMDc3Nzh9fX1dfQ__&Key-Pair-Id=KQOSYIR44AIC0&Signature=gKYR8acvDgbi8z18XA6FFb6V3WsUUitSkMpozCmYDYKTywl2sKkWmthVWN%7Etq6UxqZLmK0hwtUFMX88T2mRTjaJ7tYCYHQV-8WTl6G3nAte9Njf5GwUzY5r2BvOOFkXRmvqNQZbGNhsXOn3pYWJXIPJ1kSnmbJUvfLGJ13prtlalBByDd2fSkcAkynEN%7EYOZSR0oa0Ts15hbLE1G5Bh0h7jfocbaytpeQ7Zlb11uMfGp2bwIvZzKgfIAtIy08wmpofziJwCIURZLyjgYX9ja8QkTQ4b0hW-8aRwEKN5Ltq73byszi6XzHNourUQn27k7JtIOvbvqWgZ15MI5PT6R6A__"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-semibold text-orange underline underline-offset-2 transition-colors duration-200 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange"
+              style="text-decoration-line: underline; text-decoration-thickness: 2px;"
+            >cliquez ici</a>.
+          </p>
+        </div>
+        <div class="mx-auto mt-12 max-w-[1080px]">
+          <svg class="wave-divider" data-wave-reveal viewBox="0 0 1200 32" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,16 Q150,0 300,16 T600,16 T900,16 T1200,16" fill="none" stroke="#FF4F01" stroke-width="1.5" stroke-linecap="round" opacity="0.35"></path>
+          </svg>
+        </div>
+      </section>
+
+      <section class="bg-softGray px-6 py-14 sm:py-20">
+        <div class="mx-auto max-w-[1080px]" data-scroll-reveal data-animate="fade-up" data-duration="600">
+          <div class="text-center">
+            <h2 class="text-[28px] font-semibold leading-[1.15] tracking-[0] text-ink sm:text-[36px]">
+              Pendant notre appel
+            </h2>
+            <p class="mt-3 text-[17px] font-normal leading-[1.5] text-muted">
+              20 minutes max. Pas de PowerPoint.
+            </p>
+          </div>
+
+          <div class="mt-14 grid gap-6 lg:grid-cols-3">
+            <article class="rounded-brand bg-white p-8">
+              <div class="call-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s6-5.3 6-11a6 6 0 0 0-12 0c0 5.7 6 11 6 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="2"></circle>
+                </svg>
+              </div>
+              <h3 class="mt-5 text-[18px] font-semibold leading-snug text-ink">
+                Audit de votre zone Google
+              </h3>
+              <p class="mt-2 text-[15px] font-normal leading-[1.5] text-muted">
+                On regarde concrètement votre visibilité actuelle sur les requêtes locales de votre métier.
+              </p>
+            </article>
+
+            <article class="rounded-brand bg-white p-8">
+              <div class="call-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 18.5h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                  <path d="M6 15.5 10 11l3 3 5-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M15.5 7H18v2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <h3 class="mt-5 text-[18px] font-semibold leading-snug text-ink">
+                Analyse de vos concurrents directs
+              </h3>
+              <p class="mt-2 text-[15px] font-normal leading-[1.5] text-muted">
+                Qui ramasse les chantiers à votre place sur Google, et pourquoi.
+              </p>
+            </article>
+
+            <article class="rounded-brand bg-white p-8">
+              <div class="call-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="m5.5 7.5 1.7 1.7 3.3-3.7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M13 8h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                  <path d="m5.5 15 1.7 1.7 3.3-3.7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M13 15.5h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+              <h3 class="mt-5 text-[18px] font-semibold leading-snug text-ink">
+                Plan d'action concret
+              </h3>
+              <p class="mt-2 text-[15px] font-normal leading-[1.5] text-muted">
+                Si on travaille ensemble, on en parle. Sinon, vous repartez avec un audit clair.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-cream px-6 py-14 sm:py-20">
+        <div class="mx-auto max-w-[1080px]" data-scroll-reveal data-animate="fade-up" data-duration="600">
+          <h2 class="text-center text-[28px] font-semibold leading-[1.15] tracking-[0] text-ink sm:text-[36px]">
+            Ce que ça donne, concrètement.
+          </h2>
+
+          <div class="mt-14 grid gap-6 lg:grid-cols-2">
+            <article class="rounded-brand bg-white p-8">
+              <p class="case-label m-0 text-[12px] font-semibold uppercase tracking-[0.08em] text-orange">
+                Chauffagiste, Nantes
+              </p>
+              <div class="proof-image-frame mt-5">
+                <img
+                  src="images/ramzi-whatsapp-soft-rounded.webp"
+                  alt="Capture WhatsApp de la première demande reçue par Ramzi"
+                  class="proof-image"
+                  width="523"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <h3 class="mt-6 text-[20px] font-semibold leading-[1.25] tracking-[0] text-ink sm:text-[24px]">
+                1ère demande de devis Google après 13 jours.
+              </h3>
+              <p class="mt-3 text-[15px] font-normal leading-[1.5] text-muted">
+                Avant : que du bouche-à-oreille. Aucune présence en ligne.
+              </p>
+            </article>
+
+            <article class="rounded-brand bg-white p-8">
+              <p class="case-label m-0 text-[12px] font-semibold uppercase tracking-[0.08em] text-orange">
+                Réparateur informatique, Vittel
+              </p>
+              <div class="acdj-slider mt-5" tabindex="0" aria-label="Comparaison avant après">
+                <img src="images/acdj-apres.webp" alt="Site ACDJ après refonte" class="acdj-img acdj-after" width="1200" height="750" loading="lazy" decoding="async">
+                <div class="acdj-before-wrap">
+                  <img src="images/acdj-avant.webp" alt="Site ACDJ avant refonte" class="acdj-img acdj-before" width="1200" height="750" loading="lazy" decoding="async">
+                </div>
+                <div class="acdj-handle">
+                  <div class="acdj-handle-line"></div>
+                  <div class="acdj-handle-button">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#FF4F01" stroke-width="2" aria-hidden="true">
+                      <path d="M9 18l-6-6 6-6"></path>
+                      <path d="M15 6l6 6-6 6"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="acdj-label acdj-label-left">AVANT</div>
+                <div class="acdj-label acdj-label-right">APRÈS</div>
+              </div>
+              <h3 class="mt-6 text-[20px] font-semibold leading-[1.25] tracking-[0] text-ink sm:text-[24px]">
+                Top 3 du pack local Google. Devis pros récurrents.
+              </h3>
+              <p class="mt-3 text-[15px] font-normal leading-[1.5] text-muted">
+                Avant : site daté, invisible sur Google. Aujourd'hui : Top 3 du pack local.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden bg-ink px-6 py-[72px] sm:py-24">
+        <svg class="dark-section-waves" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,200 Q300,140 600,200 T1200,200" fill="none" stroke="#FF4F01" stroke-width="2" opacity="0.06"></path>
+          <path d="M0,240 Q400,180 800,240 T1200,240" fill="none" stroke="#FF4F01" stroke-width="2" opacity="0.04"></path>
+          <path d="M0,160 Q200,100 500,160 T1100,160 L1200,160" fill="none" stroke="#FF4F01" stroke-width="2" opacity="0.05"></path>
+        </svg>
+        <div class="relative z-[1] mx-auto max-w-[720px] text-center" data-scroll-reveal data-animate="fade-up" data-duration="600">
+          <h2 id="final-title" class="text-[28px] font-semibold leading-[1.2] tracking-[0] text-cream sm:text-[32px]">
+            On se parle bientôt.
+          </h2>
+          <p class="mx-auto mt-4 max-w-[620px] text-[17px] font-normal leading-[1.6] text-[#B0B0B0]">
+            Vérifiez juste que vous êtes dans un endroit calme, avec une bonne connexion. Le reste, on le fait ensemble.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-cream px-5 py-14 text-center sm:px-6 sm:py-16">
+      <p class="m-0 text-[12px] font-normal text-[#A0A0A0]">
+        © 2026 Adwaves
+      </p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var params = new URLSearchParams(window.location.search);
+        var heroTitle = document.getElementById("hero-title");
+        var finalTitle = document.getElementById("final-title");
+        var appointmentText = document.getElementById("appointment-text");
+        var rescheduleLink = document.getElementById("reschedule-link");
+        var smsCancelLink = document.getElementById("sms-cancel-link");
+
+        var prospectPhone = cleanPhoneParam(params.get("phone"));
+        var bookingUid = cleanParam(
+          params.get("bookingUid") ||
+          params.get("booking_uid") ||
+          params.get("rescheduleUid") ||
+          params.get("uid")
+        );
+        window.adwavesLeadPhone = prospectPhone || null;
+        window.adwavesBookingUid = bookingUid || null;
+
+        var firstName = cleanParam(params.get("firstname"));
+        var formattedDate = formatFrenchDate(cleanParam(params.get("datetime")));
+
+        if (firstName) {
+          heroTitle.textContent = "Bonjour " + firstName + ", avant qu'on se parle...";
+          finalTitle.textContent = "On se parle bientôt, " + firstName + ".";
+        } else {
+          heroTitle.textContent = "Avant qu'on se parle...";
+          finalTitle.textContent = "On se parle bientôt.";
+        }
+
+        if (formattedDate) {
+          appointmentText.textContent = "Rendez-vous confirmé : " + formattedDate;
+        } else {
+          appointmentText.textContent = "Rendez-vous confirmé";
+        }
+
+        if (rescheduleLink) {
+          var rescheduleUrl = new URL("https://cal.com/adwaves/15min");
+          if (bookingUid) {
+            rescheduleUrl.searchParams.set("rescheduleUid", bookingUid);
+          }
+
+          rescheduleLink.setAttribute("href", rescheduleUrl.toString());
+        }
+
+        if (smsCancelLink) {
+          var smsBody = formattedDate
+            ? "Bonjour Carlos, je dois annuler notre rendez-vous prévu " + formattedDate + ". Désolé pour l'inconvénient."
+            : "Bonjour Carlos, je dois annuler notre rendez-vous. Désolé pour l'inconvénient.";
+
+          smsCancelLink.setAttribute("href", "sms:+33PLACEHOLDER_PHONE?body=" + encodeSmsBody(smsBody));
+        }
+
+        initCompareSliders();
+        startInitialAnimations();
+        startScrollAnimations();
+        startWaveAnimations();
+      });
+
+      function cleanParam(value) {
+        if (!value) {
+          return "";
+        }
+
+        return value.trim();
+      }
+
+      function cleanPhoneParam(value) {
+        if (!value) {
+          return "";
+        }
+
+        var trimmed = value.trim();
+        if (value.charAt(0) === " " && /^\d/.test(trimmed)) {
+          return "+" + trimmed;
+        }
+
+        return trimmed;
+      }
+
+      function encodeSmsBody(value) {
+        return encodeURIComponent(value).replace(/'/g, "%27");
+      }
+
+      function initCompareSliders() {
+        var sliders = document.querySelectorAll(".acdj-slider");
+
+        sliders.forEach(function (slider) {
+          var beforeWrap = slider.querySelector(".acdj-before-wrap");
+          var beforeImage = slider.querySelector(".acdj-before-wrap .acdj-img");
+          var handle = slider.querySelector(".acdj-handle");
+          var currentPosition = 0;
+          var dragging = false;
+
+          if (!beforeWrap || !beforeImage || !handle) {
+            return;
+          }
+
+          function syncBeforeImageWidth() {
+            beforeImage.style.width = slider.getBoundingClientRect().width + "px";
+          }
+
+          function setPosition(percent) {
+            currentPosition = Math.max(0, Math.min(100, percent));
+            beforeWrap.style.width = currentPosition + "%";
+            handle.style.left = currentPosition + "%";
+          }
+
+          function positionFromClientX(clientX) {
+            var rect = slider.getBoundingClientRect();
+            if (!rect.width) {
+              return currentPosition;
+            }
+
+            return ((clientX - rect.left) / rect.width) * 100;
+          }
+
+          function removeTransition() {
+            beforeWrap.classList.remove("is-animating");
+            handle.classList.remove("is-animating");
+          }
+
+          function startDrag(event) {
+            dragging = true;
+            removeTransition();
+
+            if (event.type === "touchstart") {
+              event.preventDefault();
+              setPosition(positionFromClientX(event.touches[0].clientX));
+              document.addEventListener("touchmove", moveTouch, { passive: false });
+              document.addEventListener("touchend", stopDrag);
+              document.addEventListener("touchcancel", stopDrag);
+              return;
+            }
+
+            event.preventDefault();
+            setPosition(positionFromClientX(event.clientX));
+            document.addEventListener("mousemove", moveMouse);
+            document.addEventListener("mouseup", stopDrag);
+          }
+
+          function moveMouse(event) {
+            if (!dragging) {
+              return;
+            }
+
+            setPosition(positionFromClientX(event.clientX));
+          }
+
+          function moveTouch(event) {
+            if (!dragging) {
+              return;
+            }
+
+            event.preventDefault();
+            setPosition(positionFromClientX(event.touches[0].clientX));
+          }
+
+          function stopDrag() {
+            dragging = false;
+            document.removeEventListener("mousemove", moveMouse);
+            document.removeEventListener("mouseup", stopDrag);
+            document.removeEventListener("touchmove", moveTouch);
+            document.removeEventListener("touchend", stopDrag);
+            document.removeEventListener("touchcancel", stopDrag);
+          }
+
+          slider.addEventListener("mousedown", startDrag);
+          slider.addEventListener("selectstart", function (event) {
+            event.preventDefault();
+          });
+          slider.addEventListener("touchstart", startDrag, { passive: false });
+          slider.querySelectorAll("img").forEach(function (image) {
+            image.setAttribute("draggable", "false");
+            image.addEventListener("dragstart", function (event) {
+              event.preventDefault();
+            });
+          });
+          slider.addEventListener("keydown", function (event) {
+            if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") {
+              return;
+            }
+
+            event.preventDefault();
+            removeTransition();
+            setPosition(currentPosition + (event.key === "ArrowRight" ? 5 : -5));
+          });
+
+          beforeWrap.classList.add("is-animating");
+          handle.classList.add("is-animating");
+          syncBeforeImageWidth();
+          setPosition(0);
+
+          if ("ResizeObserver" in window) {
+            new ResizeObserver(syncBeforeImageWidth).observe(slider);
+          } else {
+            window.addEventListener("resize", syncBeforeImageWidth);
+          }
+
+          if (!("IntersectionObserver" in window)) {
+            setPosition(50);
+            window.setTimeout(removeTransition, 450);
+            return;
+          }
+
+          var observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  setPosition(50);
+                  window.setTimeout(removeTransition, 450);
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.35 }
+          );
+
+          observer.observe(slider);
+        });
+      }
+
+      function formatFrenchDate(value) {
+        if (!value) {
+          return "";
+        }
+
+        var date = new Date(value);
+        if (Number.isNaN(date.getTime())) {
+          return "";
+        }
+
+        return new Intl.DateTimeFormat("fr-FR", {
+          weekday: "long",
+          day: "numeric",
+          month: "long",
+          year: "numeric",
+          hour: "2-digit",
+          minute: "2-digit"
+        })
+          .format(date)
+          .replace(":", "h");
+      }
+
+      function startInitialAnimations() {
+        var animatedItems = document.querySelectorAll("[data-animate]:not([data-scroll-reveal])");
+        window.requestAnimationFrame(function () {
+          animatedItems.forEach(function (item) {
+            var delay = item.getAttribute("data-delay") || "0";
+            var duration = item.getAttribute("data-duration") || "400";
+            item.style.transitionDelay = delay + "ms";
+            item.style.transitionDuration = duration + "ms";
+            item.classList.add("is-visible");
+          });
+        });
+      }
+
+      function startScrollAnimations() {
+        var revealItems = document.querySelectorAll("[data-scroll-reveal]");
+
+        if (!("IntersectionObserver" in window)) {
+          revealItems.forEach(function (item) {
+            item.classList.add("is-visible");
+          });
+          return;
+        }
+
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                var target = entry.target;
+                var duration = target.getAttribute("data-duration") || "600";
+                target.style.transitionDuration = duration + "ms";
+                target.classList.add("is-visible");
+                observer.unobserve(target);
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
+
+        revealItems.forEach(function (item) {
+          observer.observe(item);
+        });
+      }
+
+      function startWaveAnimations() {
+        var waves = document.querySelectorAll("[data-wave-reveal]");
+
+        if (!("IntersectionObserver" in window)) {
+          waves.forEach(function (wave) {
+            wave.classList.add("is-visible");
+          });
+          return;
+        }
+
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        waves.forEach(function (wave) {
+          observer.observe(wave);
+        });
+      }
+    </script>
+  </body>
+</html>
