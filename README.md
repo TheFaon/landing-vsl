@@ -10,7 +10,7 @@ Replace these placeholders before going live:
 - `PLACEHOLDER_PHONE` in the SMS cancellation link. Keep the `+33` country prefix if the target number is French.
 - Pass `bookingUid=BOOKING_UID` in the landing page URL to generate the Cal.com rescheduling URL: `https://cal.com/adwaves/15min?rescheduleUid=BOOKING_UID`.
 
-Also replace the Open Graph image URL in `index.html` with a final 1200x630 preview image.
+The Open Graph and Twitter preview image is `images/site-preview-hero.png`, generated from a 1200x630 screenshot of the hero section.
 
 ## Case study images
 
