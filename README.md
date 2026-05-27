@@ -6,7 +6,7 @@ Single-file landing page for prospects who have just booked a sales call. The pa
 
 Replace these placeholders before going live:
 
-- The Vimeo embed URL in the video player and the Loom share URL in the fallback link.
+- The local MP4 URL in the video player and the Loom share URL in the fallback link.
 - The SMS cancellation link currently points to `+33781574955`.
 - Pass `bookingUid=BOOKING_UID` in the landing page URL to generate the Cal.com rescheduling URL: `https://cal.com/adwaves/15min?rescheduleUid=BOOKING_UID`.
 

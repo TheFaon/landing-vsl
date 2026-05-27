@@ -23,7 +23,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://player.vimeo.com">
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet">
 
     <style>
@@ -1101,14 +1100,15 @@
             data-delay="950"
             data-duration="500"
           >
-            <iframe
-              src="https://player.vimeo.com/video/1195383472?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1"
-              frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              class="h-full w-full rounded-brand bg-ink"
-              title="dda1c36702d44fffb7b79e0724781782"
-            ></iframe>
+            <video
+              class="h-full w-full rounded-brand bg-ink object-cover"
+              controls
+              poster="images/loom-preview.png"
+              preload="metadata"
+              playsinline
+            >
+              <source src="videos/dda1c36702d44fffb7b79e0724781782.mp4" type="video/mp4">
+            </video>
           </div>
           <p class="mt-4 text-center text-[13px] italic leading-relaxed text-muted">
             Si la vidéo ne se charge pas,
