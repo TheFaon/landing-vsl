@@ -1296,7 +1296,10 @@
         window.adwavesBookingUid = bookingUid || null;
 
         var firstName = cleanParam(params.get("firstname"));
-        var formattedDate = formatFrenchDate(cleanParam(params.get("datetime")));
+        var rawDatetime = cleanParam(params.get("datetime"));
+        var formattedDate = formatFrenchDate(rawDatetime);
+
+        trackVslOpen(firstName, rawDatetime, bookingUid);
 
         if (firstName) {
           heroTitle.textContent = "Bonjour " + firstName + ", avant qu'on se parle...";
@@ -1341,6 +1344,37 @@
         }
 
         return value.trim();
+      }
+
+      function trackVslOpen(firstName, datetime, bookingUid) {
+        if (!bookingUid) {
+          return;
+        }
+
+        var trackingUrl = "https://n8n.contactfidezy.fr/webhook/vsl_clicked";
+        var payload = new URLSearchParams();
+        payload.set("event", "vsl_opened");
+        payload.set("firstname", firstName || "");
+        payload.set("datetime", datetime || "");
+        payload.set("bookingUid", bookingUid);
+        payload.set("openedAt", new Date().toISOString());
+        payload.set("url", window.location.href);
+        payload.set("referrer", document.referrer || "");
+        payload.set("userAgent", navigator.userAgent || "");
+
+        var sentWithBeacon = false;
+        if (navigator.sendBeacon) {
+          sentWithBeacon = navigator.sendBeacon(trackingUrl, payload);
+        }
+
+        if (!sentWithBeacon && window.fetch) {
+          fetch(trackingUrl, {
+            method: "POST",
+            mode: "no-cors",
+            keepalive: true,
+            body: payload
+          }).catch(function () {});
+        }
       }
 
       function cleanPhoneParam(value) {
