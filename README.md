@@ -47,6 +47,6 @@ In Vercel, add `rdv.adwaves.fr` as a custom domain for the project, then create 
 
 ## Tracking note
 
-When the page loads with a `bookingUid` URL parameter, it sends a `vsl_opened` event to the n8n webhook at `https://n8n.contactfidezy.fr/webhook/vsl_clicked`. The request body is form-urlencoded and includes `event`, `firstname`, `datetime`, `bookingUid`, `openedAt`, `url`, `referrer`, and `userAgent`.
+When the page loads with a `bookingUid` URL parameter, it sends a `vsl_opened` event to the n8n webhook at `https://n8n.adwaves.fr/webhook/vsl_clicked`. The request body is form-urlencoded and includes `event`, `firstname`, `datetime`, `bookingUid`, `openedAt`, `url`, `referrer`, and `userAgent`.
 
 Each page load is counted. Visits without `bookingUid` do not trigger the webhook. The `phone` URL parameter is still parsed and stored in JavaScript as `window.adwavesLeadPhone`, but it is not sent to the webhook or displayed on the page.
